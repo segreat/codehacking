@@ -31,13 +31,30 @@
         <ul class="sidebar-menu">
             <li class="header">HEADER</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><span>Link</span></a></li>
-            <li><a href="#"><span>Another Link</span></a></li>
-            <li class="treeview">
-                <a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <li class="treeview" class="active">
+                <a href="#"><span>Categories</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Link in level 2</a></li>
-                    <li><a href="#">Link in level 2</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Index</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#"><span>Posts</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Index</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#"><span>Users</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/users/create">Create</a></li>
+                    <li><a href="#">Edit</a></li>
+                    {{--<li><a href="/admin/users">Index</a></li>--}}
+                    <li><a href="{{route('admin_user')}}">Index</a></li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

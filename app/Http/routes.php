@@ -20,10 +20,16 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 ROute::resource('admin/users','AdminUserController');
+Route::get('admin_user',[
+    "uses"=>"AdminUserController@index",
+    "as"=>"admin_user"
+]);
 
 Route::get('/admin', function(){
     //return view('admin.index');
     return view('admin_template');
 });
 
-Route::get('test', 'TestController@index');
+
+
+Route::get('/test', 'TestController@index');

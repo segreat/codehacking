@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','is_active','role_id','pic_id',
     ];
 
     /**
@@ -26,6 +26,17 @@ class User extends Authenticatable
 
     public function role(){
         return $this->belongsTo('App\Role');
+    }
+
+    /*ACCESSOR*/
+    public function getNameAttribute($value){
+        /*return ucfirst($value);*/
+        return strtoupper($value);
+    }
+
+    /*MUTATOR*/
+    public function setNameAttribute($value){
+        $this->attributes['name']= strtoupper($value);
     }
 
 }
