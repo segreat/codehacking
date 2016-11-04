@@ -10,12 +10,12 @@
 
     <div class="form-group">
         {!! form::label('name','Name')!!}
-        {!! form::text('name',null,['class'=>'form-control']) !!}
+        {!! form::text('name',null,['class'=>'form-control','placeholder'=>'Name']) !!}
     </div>
 
     <div class="form-group">
         {!! form::label('email','Email')!!}
-        {!! form::text('email',null,['class'=>'form-control']) !!}
+        {!! form::text('email',null,['class'=>'form-control','placeholder'=>'Email']) !!}
     </div>
 
     <div class="form-group">
@@ -36,7 +36,7 @@
 
     <div class="form-group">
         {!! form::label('password','Password')!!}
-        {!! form::password('password',['class'=>'form-control']) !!}
+        {!! form::password('password',['class'=>'form-control','placeholder'=>'Password']) !!}
     </div>
 
 

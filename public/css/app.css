@@ -12,4 +12,11 @@
 .form-control {
   width: 50%; }
 
+img {
+  border: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px; }
+
 /*# sourceMappingURL=app.css.map */

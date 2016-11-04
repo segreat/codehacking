@@ -28,6 +28,10 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role');
     }
 
+    public function pic(){
+        return $this->belongsTo('App\Pic');
+    }
+
     /*ACCESSOR*/
     public function getNameAttribute($value){
         /*return ucfirst($value);*/
