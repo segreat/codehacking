@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class role extends Model
 {
-    public function user(){
-        return $this->hasOne('App\User');
-    }
+    protected $fillable = [
+        'name',
+    ];
 }

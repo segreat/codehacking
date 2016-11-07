@@ -43,4 +43,21 @@ class User extends Authenticatable
         $this->attributes['name']= strtoupper($value);
     }
 
+   /* public function setpasswordAttribute($password){
+        if(!empty($password)){
+            $this->attribute['password'] = bcrypt('password');
+        }
+    }*/
+
+    public function IsAdmin(){
+        if($this->role->name =='administrator' && $this->is_active == 1){
+            return true;
+        }
+        return false;
+    }
+
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
+
 }

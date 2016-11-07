@@ -14,4 +14,11 @@ class Pic extends Model
     {
         return $this->uploads . $pic;
     }
+
+    public function post(){
+        return $this->hasOne('App\Post');
+
+    }
+
+
 }

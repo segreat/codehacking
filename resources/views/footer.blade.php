@@ -1,4 +1,5 @@
 <footer class="main-footer">
+    @include('include.form_error')
     <!-- To the right -->
     <div class="pull-right hidden-xs">
         Anything you want

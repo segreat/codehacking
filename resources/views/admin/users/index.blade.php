@@ -7,6 +7,12 @@
     <div class="container">
         <h2>ADMIN</h2>
 
+        @if(Session::has('deleted_user'))
+        <h1 class="bg-danger">{{session('deleted_user')}}</h1>
+
+        @endif
+
+
         <p>List of all Login Users:</p>
         <table class="table table-striped">
             <thead>
